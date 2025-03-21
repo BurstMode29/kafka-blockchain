@@ -79,3 +79,6 @@ bin/kafka-server-start.sh config/server.properties
 
 # Create 'transactions' topic
 bin/kafka-topics.sh --create --topic transactions --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+
+# Monitor 'transactions' topic
+.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic transactions --from-beginning
