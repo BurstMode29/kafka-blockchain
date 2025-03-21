@@ -73,6 +73,8 @@ Start your Kafka instance and create a topic named `transactions`.
 ```bash
 # Start Zookeeper
 bin/zookeeper-server-start.sh config/zookeeper.properties
+or 
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 
 # Start Kafka
 bin/kafka-server-start.sh config/server.properties
